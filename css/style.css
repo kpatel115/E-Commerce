@@ -48,7 +48,7 @@ li {
     border: 0 ;
     box-shadow: 0 0 3px #ffffff, 0 0 7px #ffffff, 0 0 20px #ececec;
 }
-#flex-item-2{
+.flex-item-2{
     border: none;
     color: gold;
 }
@@ -61,9 +61,13 @@ li {
 .flex-item-5{
     border: none;
 }
-#flex-item-6{
+.flex-item-6{
     border: none;
     color: gold;
+}
+.flex-item-7 {
+    color: antiquewhite;
+    border: none;
 }
 .main-product-image {
     display: block;
@@ -81,6 +85,7 @@ li {
     margin-top: 1rem;;
     margin-bottom: 1rem;
 }
+
 .content1{
     text-align: center;
 }
