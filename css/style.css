@@ -69,6 +69,10 @@ li {
     color: antiquewhite;
     border: none;
 }
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
 .main-product-image {
     display: block;
     margin-left: auto;
@@ -76,13 +80,12 @@ li {
     max-width: 75%;
     height: auto;
     border-radius: 8px;
-    
 }
 .main-container {
     display: grid;
     height: 50vh;
     grid-template-columns:1fr 1fr 1fr;
-    margin-top: 1rem;;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -97,9 +100,48 @@ li {
 .content3{
     text-align: center;
 }
+.shop-section {
+    text-align: center;
+
+}
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-rows: 100px ;
+    grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+    align-items: start;
+}
+.shop-item1 {
+    background-color: rgb(228, 228, 204);
+    grid-area: a;
+    text-align: center;
+}
+.shop-item2 {
+    background-color: rgb(228, 228, 204);
+    grid-area: b;
+    text-align: center;
+}
+.shop-item3 {
+    background-color: rgb(228, 228, 204);
+    grid-area: c;
+    text-align: center;
+}
+.shop-item4 {
+    background-color: rgb(228, 228, 204);
+    grid-area: d;
+    text-align: center;
+}
 .shop-item-image {
     max-width:50%;
     height: auto;
+}
+.shop-item-details {
+    text-align: center;
 }
 
 .footer-container {
