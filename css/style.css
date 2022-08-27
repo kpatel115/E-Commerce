@@ -97,6 +97,10 @@ li {
 .content3{
     text-align: center;
 }
+.shop-item-image {
+    max-width:50%;
+    height: auto;
+}
 
 .footer-container {
     background-color: black;
