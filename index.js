@@ -38,6 +38,7 @@ for (let i=0; i < carts.length; i++) {
 
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem("cartNumbers");
+    
     if(productNumbers) {
         document.querySelector(".cart span").textContent = productNumbers;
     }
@@ -100,4 +101,24 @@ function totalCost(product) {
     
 }
 
+function displayCart() {
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector(".product-container");
+    if(cartItems && productContainer ) {
+        console.log("running");
+        productContainer.innerHTML = "";
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += ` 
+            <div class="product">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <img src="images/${item.tag}.jpg">
+                <span>${item.name}</span>
+            </div>
+            `
+        })
+    }
+}
+
 onLoadCartNumbers();
+displayCart();

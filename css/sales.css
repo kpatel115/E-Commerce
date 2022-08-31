@@ -81,8 +81,12 @@ a {
     text-align: center;
 
 }
-.sales-container {
-    
+.sales-container, .product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
 }
 .sales-shirts {
     display: grid;
@@ -154,6 +158,60 @@ a {
     margin: 4px 2px;
     cursor: pointer;
 }
+/* ------------------- Cart Page ---------- */
+.product-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    /* border-bottom: 4px solid lightgray; */
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom:1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+
+
 /* Footer Section */
 .footer-container {
     background-color: black;
