@@ -144,17 +144,6 @@ a {
     text-align: center;
 }
 
-.sales-section {
-    text-align: center;
-
-}
-.sales-container, .product-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    padding-bottom: 100px;
-}
 .sales-shirts {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -225,21 +214,22 @@ a {
     margin: 4px 2px;
     cursor: pointer;
 }
-/* ------------------- Cart Page ---------- */
-.product-container {
+
+/* -----------Cart Page-------------------------------*/
+.products-container {
     max-width: 650px;
     justify-content: space-around;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 50px;   
 }
-.product-container fa-circle-xmark {
+
+.products-container ion-icon {
     font-size: 25px;
-    color: blue;
+    color:blue;
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
 }
-
 .product-header {
     width: 100%;
     max-width: 650px;
@@ -249,41 +239,67 @@ a {
     margin: 0 auto;
 }
 
-.product-title {
+.product-title{
     width: 45%;
 }
 
 .price {
     width: 15%;
-    /* border-bottom: 4px solid lightgray; */
+    border-bottom: 4px solid lightgray;
     display: flex;
     align-items: center;
 }
 
 .quantity {
     width: 30%;
-    border-bottom:1px solid lightgray;
+    border-bottom: 4px solid lightgray;
     display: flex;
     align-items: center;
 }
 
-
 .total {
     width: 10%;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 4px solid lightgray;
     display: flex;
     align-items: center;
 }
 
 .product {
     width: 45%;
+    border-bottom: 4px solid lightgray;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid lightgray;
+}
+.product ion-icon {
+    cursor: pointer;
 }
 
+.products{
+    width:100;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
 
 .footer-container {
     background-color: black;
