@@ -4,25 +4,25 @@ let carts = document.querySelectorAll(".add-cart");
 let products = [
     {
         name: "Polo Shirt",
-        tag: 'poloshirt',
+        tag: 'poloshirt_img',
         price: 50,
         inCart: 0
     },
     {
         name: "Graphic Shirt",
-        tag: 'blackshirt',
+        tag: 'blackshirt_img',
         price: 25,
         inCart: 0
     },
     {
         name: "Graphic Tee ",
-        tag: 'blacktee',
+        tag: 'blacktee_img',
         price: 30,
         inCart: 0
     },
     {
         name: "Graphic Tee 2",
-        tag: 'greytee',
+        tag: 'greytee_img',
         price: 20,
         inCart: 0
     }
@@ -104,7 +104,7 @@ function totalCost(product) {
 function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
-    let productContainer = document.querySelector(".product-container");
+    let productContainer = document.querySelector(".products");
     if(cartItems && productContainer ) {
         console.log("running");
         productContainer.innerHTML = "";
@@ -115,6 +115,7 @@ function displayCart() {
                 <img src="images/${item.tag}.jpg">
                 <span>${item.name}</span>
             </div>
+            <div class="price">${item.price}</div>
             `
         })
     }
