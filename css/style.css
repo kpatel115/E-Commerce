@@ -144,6 +144,147 @@ a {
     text-align: center;
 }
 
+.sales-section {
+    text-align: center;
+
+}
+.sales-container, .product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.sales-shirts {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-areas:
+    "a a b b c c d d"
+    "a a b b c c d d";
+    align-items: start;
+    background-color: rgb(228, 228, 204);
+    text-align: center;
+}
+.sale-shirt-1 {
+    grid-area: a;   
+}
+.sale-shirt-2 {
+    grid-area: b;
+}
+.sale-shirt-3 {
+    grid-area: c;
+}
+.sale-shirt-4 {
+    grid-area: d;
+}
+
+.sales-pants {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-areas:
+    "e e f f g g h h"
+    "e e f f g g h h";
+    align-items: start;
+    background-color: rgb(228, 228, 204);
+    text-align: center;
+}
+.sale-pant-1 {
+    grid-area: e;
+}
+.sale-pant-2 {
+    grid-area: f;
+}
+.sale-pant-3 {
+    grid-area: g;
+}
+.sale-pant-4 {
+    grid-area:h ;
+}
+
+.sale-image {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+.btn {
+    background-color: rgb(70, 70, 70);
+    border: none;
+    color: rgb(255, 254, 254);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* ------------------- Cart Page ---------- */
+.product-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.product-container fa-circle-xmark {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    /* border-bottom: 4px solid lightgray; */
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom:1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+
 .footer-container {
     background-color: black;
     box-shadow:0px 0px 10px var(--clr-gray200);

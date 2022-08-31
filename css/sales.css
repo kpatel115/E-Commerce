@@ -76,6 +76,76 @@ a {
 }
 
 /*    End of Navigation Bar  */
+.main-product-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    height: auto;
+    border-radius: 8px;
+}
+.main-container {
+    display: grid;
+    height: 50vh;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content1{
+    text-align: center;
+}
+
+.content2{
+    text-align: center;
+}
+
+.content3{
+    text-align: center;
+}
+.shop-section {
+    text-align: center;
+
+}
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-rows: 100px ;
+    grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+    align-items: start;
+}
+.shop-item1 {
+    background-color: rgb(228, 228, 204);
+    grid-area: a;
+    text-align: center;
+}
+.shop-item2 {
+    background-color: rgb(228, 228, 204);
+    grid-area: b;
+    text-align: center;
+}
+.shop-item3 {
+    background-color: rgb(228, 228, 204);
+    grid-area: c;
+    text-align: center;
+}
+.shop-item4 {
+    background-color: rgb(228, 228, 204);
+    grid-area: d;
+    text-align: center;
+}
+.shop-item-image {
+    max-width:50%;
+    height: auto;
+}
+.shop-item-details {
+    text-align: center;
+}
 
 .sales-section {
     text-align: center;
@@ -158,58 +228,6 @@ a {
     margin: 4px 2px;
     cursor: pointer;
 }
-/* ------------------- Cart Page ---------- */
-.product-container {
-    max-width: 650px;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-.product-header {
-    width: 100%;
-    max-width: 650px;
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 4px solid lightgray;
-    margin: 0 auto;
-}
-
-.product-title {
-    width: 45%;
-}
-
-.price {
-    width: 15%;
-    /* border-bottom: 4px solid lightgray; */
-    display: flex;
-    align-items: center;
-}
-
-.quantity {
-    width: 30%;
-    border-bottom:1px solid lightgray;
-    display: flex;
-    align-items: center;
-}
-
-
-.total {
-    width: 10%;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    align-items: center;
-}
-
-.product {
-    width: 45%;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid lightgray;
-}
-
 
 
 /* Footer Section */
