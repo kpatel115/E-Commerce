@@ -1,7 +1,7 @@
 body{
     margin: 0;
     background-color: beige;
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
 }
 .header {
     text-align: center;
@@ -281,7 +281,6 @@ a {
     width:100;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .products img {
