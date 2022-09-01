@@ -128,7 +128,7 @@ function displayCart() {
                 <ion-icon name="chevron-forward-circle-outline"></ion-icon>
             </div>
 
-            <div class="total">${item.inCart + item.price}</div>
+            <div class="total">${item.inCart * item.price}</div>
             `
         });
 
