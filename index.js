@@ -4,25 +4,25 @@ let carts = document.querySelectorAll(".add-cart");
 let products = [
     {
         name: "Polo Shirt",
-        tag: 'poloshirt_img',
+        tag: 'poloshirt',
         price: 50,
         inCart: 0
     },
     {
         name: "Graphic Shirt",
-        tag: 'blackshirt_img',
+        tag: 'blackshirt',
         price: 25,
         inCart: 0
     },
     {
         name: "Graphic Tee ",
-        tag: 'blacktee_img',
+        tag: 'blacktee',
         price: 30,
         inCart: 0
     },
     {
         name: "Graphic Tee 2",
-        tag: 'greytee_img',
+        tag: 'greytee',
         price: 20,
         inCart: 0
     }
@@ -35,7 +35,7 @@ for (let i=0; i < carts.length; i++) {
         totalCost(products[i]);
     })
 }
-
+// loads number of items in cart onto html
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem("cartNumbers");
     
@@ -84,6 +84,7 @@ function setItems(product) {
     (cartItems));
 }
 
+// total cart cost of products
 function totalCost(product) {
     // console.log("The product price is", product.price);
     let cartCost = localStorage.getItem("totalCost");
@@ -100,6 +101,15 @@ function totalCost(product) {
 
     
 }
+function removeItem(product) {
+    console.log("function connected to icon button");
+      for (var i in productContainer) {
+        if (productContainer[i].name === product) {
+            productContainer.splice(i, 1);
+            break;
+        }
+      }
+}
 
 function displayCart() {
     
@@ -115,7 +125,7 @@ function displayCart() {
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += ` 
             <div class="product">
-                <ion-icon name="close-circle-outline"></ion-icon>
+                <ion-icon class="remove" name="close-circle-outline" onclick="removeItem(product);"></ion-icon>
                 <img src="images/${item.tag}.jpg">
                 <span>${item.name}</span>
             </div>
@@ -123,9 +133,9 @@ function displayCart() {
             <div class="price">${item.price}</div>
             
             <div class="quantity">
-                <ion-icon name="chevron-back-circle-outline"></ion-icon>
+                <ion-icon class="subtract" name="chevron-back-circle-outline"></ion-icon>
                 <span>${item.inCart}</span>
-                <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                <ion-icon class="add" name="chevron-forward-circle-outline"></ion-icon>
             </div>
 
             <div class="total">${item.inCart * item.price}</div>
