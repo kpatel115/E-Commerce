@@ -118,7 +118,7 @@ a {
     align-items: start;
 }
 .shop-item1 {
-    background-color: rgb(228, 228, 204);
+    background-color: rgb(0, 0, 0);
     grid-area: a;
     text-align: center;
 }
@@ -147,14 +147,14 @@ a {
 
 .sales-shirts {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     grid-template-rows: repeat(2, 1fr) ;
     grid-template-areas:
-    "a a b b c c d d"
-    "a a b b c c d d";
+    "a a b b"
+    "c c d d";
     align-items: start;
-    background-color: rgb(228, 228, 204);
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 .sale-shirt-1 {
@@ -172,12 +172,12 @@ a {
 
 .sales-pants {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     grid-template-rows: repeat(2, 1fr) ;
     grid-template-areas:
-    "e e f f g g h h"
-    "e e f f g g h h";
+    "e e f f "
+    "g g h h";
     align-items: start;
     background-color: rgb(228, 228, 204);
     text-align: center;
